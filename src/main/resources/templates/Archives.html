@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width:device-width; initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/ampath.jpeg">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+  <style>
+        .footer {
+            position: relative;
+            margin-top: 400px;
+        }
+        .btn btn-primary {
+            position: center;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- Navbar Section Start -->
+<nav class="navbar navbar-dark navbar-expand-lg"  uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/USAID AMPATH Uzima.png" class="img-fluid p-0" style="width: 25%; filter: brightness(0) invert(1);">
+      <div class="ml-2 p-0 d-inline webT"></div>
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navBar">
+      <ul class="navbar-nav  ml-auto ">
+
+        <li class="nav-item active">
+          <a class="nav-link " href="index.html">Abstract</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Registration.html">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photo.html">Photo </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Correspondence.html">Correspondence</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Archives.html">Archives</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Nav Section End -->
+
+
+<!-- registration start -->
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>AMPATH</title>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" th:href="@{/themes/assets/img/favicons/apple-touch-icon.png}">
+  <link rel="icon" type="image/png" sizes="32x32" th:href="@{/themes/assets/img/favicons/favicon-32x32.png}">
+  <link rel="icon" type="image/png" sizes="16x16" th:href="@{/themes/assets/img/favicons/favicon-16x16.png}">
+  <link rel="shortcut icon" type="image/x-icon" th:href="@{/themes/assets/img/favicons/favicon.ico}">
+  <link rel="manifest" th:href="@{/themes/assets/img/favicons/manifest.json}">
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#d5bdaf">
+  <script th:src="@{/themes/vendors/imagesloaded/imagesloaded.pkgd.min.js}"></script>
+  <script th:src="@{/themes/assets/js/config.js}"></script>
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link th:href="@{/themes/assets/css/theme.min.css}" type="text/css" rel="stylesheet" id="style-default">
+  <link th:href="@{/themes/assets/css/user.min.css}" type="text/css" rel="stylesheet" id="user-style-default">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+      document.documentElement.classList.remove('dark');
+    </script>
+</head>
+
+<body>
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+
+<section class="py-0">
+  <div class="bg-holder" style="background-image:url(assets/img/bg/bg-24.png);background-position:center;background-size:auto;"></div>
+  <!--/.bg-holder-->
+  <div class="container-lg position-relative" style="background-color: #87CEEB">
+    <div class="row flex-center">
+      <div class="col-12 col-xl-12 order-1 order-xl-0">
+        <div class="mb-9">
+          <div class="card shadow-none border border-300 my-4" data-component-card="data-component-card">
+            <div class="card-header p-4 border-bottom border-300 bg-soft">
+              <div class="row g-3 justify-content-between align-items-center">
+                <div class="col-12 col-md" style="background-color: #87CEEB">
+                  <h4 class="text-900 mb-0" data-anchor="data-anchor">Archives  </h4>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="txtResults"></label>
+              <textarea id="txtResults" class="form-control" name="txtResult" rows="4" cols="50" required="required" th:field="*{result}"></textarea>
+
+            </div>
+
+
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Upload File</button>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+</section>
+
+
+</main><!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+<script>
+$(document).ready(function() {
+if (document.getElementById("txtmsg").value == 0) {
+}
+else if (document.getElementById("txtmsg").value == 2) {
+
+          Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Try Again !!"
+        });
+    } else{
+        Swal.fire({
+          icon: "success",
+          title: "Submitted Successful",
+          text: "Abstract Submitted Successfully..."
+        });
+
+    }
+ });
+
+</script>
+
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script th:src="@{/themes/vendors/popper/popper.min.js}"></script>
+<script th:src="@{/themes/vendors/bootstrap/bootstrap.min.js}"></script>
+<script th:src="@{/themes/vendors/anchorjs/anchor.min.js}"></script>
+<script th:src="@{/themes/vendors/is/is.min.js}"></script>
+<script th:src="@{/themes/vendors/lodash/lodash.min.js}"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="assets/js/phoenix.js"></script>
+<script src="assets/js/showcase.js"></script>
+</body>
+</html>
+
+<!--Feedback end -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer" class="py-3 text-center text-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="display-5 mb-0 text-dark"></h2>
+        <div class="d-flex flex-row justify-content-center p-3">
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Ampath © 2024 All Rights Reserved
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/uikit.min.js"></script>
+<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+</body>
+</html>
